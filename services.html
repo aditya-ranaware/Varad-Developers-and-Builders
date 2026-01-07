@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Varad Developers & Builders</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+html, body {
+    overflow-x: hidden !important;
+}
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e8ecf3, #f8fafc);
+    }
+    
+
+    /* ------------------------------------------------
+         NAVBAR (SAME AS INDEX.HTML)
+    ------------------------------------------------ */
+    .navbar {
+      background-color: #1b1f3b !important;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 1.3);
+      padding: 0 1rem;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #fff !important;
+    }
+
+    .nav-link.active {
+      color: #fbbf24 !important;
+      font-weight: 700;
+    }
+
+    .navbar-brand img {
+      transition: 0.3s ease;
+    }
+
+    .navbar-brand img:hover {
+      transform: scale(1.1);
+    }
+
+    /* ------------------------------------------------
+         PAGE HEADER
+    ------------------------------------------------ */
+    .page-header {
+      margin: 10px;
+      margin-top: 90px;
+      background: linear-gradient(120deg, #0f172a, #1e293b, #0f172a);
+      color: rgb(255, 177, 9);
+      text-align: center;
+      padding: 100px 20px 70px;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 1.3);
+    }
+
+    /* ------------------------------------------------
+         SERVICES SECTION
+    ------------------------------------------------ */
+    .services-section {
+      padding: 80px 0;
+    }
+
+    .projects-container {
+      background: linear-gradient(120deg, #0f172a, #1e293b, #0f172a);
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 1.2);
+      color: white;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s ease;
+      height: 100%;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card i {
+      color: #f4b400;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover i {
+      transform: scale(1.15);
+    }
+
+    .service-card h5 {
+      font-weight: 600;
+      color: #1b1f3b;
+    }
+
+    .service-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* ------------------------------------------------
+         CTA SECTION
+    ------------------------------------------------ */
+    .cta-section {
+      background: linear-gradient(135deg, #1b1f3b, #2a3360);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+      margin-top: 50px;
+      border-radius: 30px 30px 0 0;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 1.15);
+    }
+
+    .cta-section h2 {
+      color: #f4b400;
+      font-weight: bold;
+    }
+
+    /* ------------------------------------------------
+         FOOTER (MATCHING INDEX.HTML)
+    ------------------------------------------------ */
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+    }
+
+    footer a {
+      color: #fbbf24;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* ------------------------------------------------
+         RESPONSIVENESS FIXES
+    ------------------------------------------------ */
+    @media (max-width: 991px) {
+      .page-header {
+        padding: 80px 20px 60px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .projects-container {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+
+      .page-header {
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .navbar-brand img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .page-header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="/images/logo.jpg" width="50" height="50" class="rounded-circle me-2">
+        <span class="fw-bold">Varad Developers & Builders</span>
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link active" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header text-center text-white py-5">
+    <div class="container">
+      <h1 class="fw-bold">Our Services</h1>
+      <p style="color: rgb(255, 242, 0);" class="lead">Delivering Quality, Trust, and Excellence in Every Project</p>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services-section">
+    <div class="container-fluid projects-container p-5">
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-building fa-3x"></i>
+            <h5>All Types of Building Plans</h5>
+            <p>We design efficient and detailed building plans that suit your needs and budget.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-cube fa-3x"></i>
+            <h5>3D Elevation Plans</h5>
+            <p>Get realistic 3D visuals of your dream home before construction begins.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-drafting-compass fa-3x"></i>
+            <h5>RCC Design</h5>
+            <p>Strong structural design ensuring durability and safety of your construction.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-chair fa-3x"></i>
+            <h5>Interior Design</h5>
+            <p>Elegant interior solutions that enhance comfort, style, and functionality.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-shield-halved fa-3x"></i>
+            <h5>Strong Structure</h5>
+            <p>We focus on quality materials and engineering precision for strong foundations.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-brush fa-3x"></i>
+            <h5>Attractive Elevation Work</h5>
+            <p>Customized designs that add character and visual appeal to your structure.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-toolbox fa-3x"></i>
+            <h5>Quality Building Materials</h5>
+            <p>We use only top-quality materials ensuring durability and satisfaction.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-user-check fa-3x"></i>
+            <h5>Personal Supervision</h5>
+            <p>Each project is monitored personally to maintain excellence in every detail.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-hammer fa-3x"></i>
+            <h5>Renovation Work</h5>
+            <p>We bring new life to old spaces with smart renovation and redesign solutions.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<!-- View Projects CTA Section -->
+<section class="py-5" style="
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: 0px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+">
+  <div class="container text-center">
+
+    <h2 class="fw-bold mb-3" style="color:#f4b400;">
+      Explore Our Completed Projects
+    </h2>
+
+    <p class="text-light mb-4" style="max-width:700px; margin:auto;">
+      Have a look at the premium residential & commercial projects 
+      successfully delivered by Varad Developers & Builders.
+    </p>
+
+    <a href="projects.html"
+       class="btn btn-warning btn-lg fw-bold shadow px-5 py-3"
+       style="border-radius: 50px; font-size:1.2rem;">
+      View Our Projects
+      <i class="fas fa-arrow-right ms-2"></i>
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- CTA -->
+  <section style="margin-bottom: 20px;" class="cta-section">
+    <div class="container">
+      <h2>Let’s Build Your Dream Project Together</h2>
+      <p class="lead mb-4">Contact us today for premium construction and design services.</p>
+      <a href="contact.html" class="btn btn-warning btn-lg fw-bold shadow">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p class="mb-3">&copy; 2025 Varad Developers & Builders | All Rights Reserved.</p>
+      <a href="https://www.instagram.com/prem.ranware?igsh=OHJvbHo5c2E4Zm5s">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+</body>
+
+</html>
